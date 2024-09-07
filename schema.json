@@ -1,40 +1,41 @@
 {
-  "type": "object",
-  "properties": {
-    "id": {
-      "type": "string"
-    },
-    "name": {
-      "type": "string"
-    },
-    "status": {
-      "type": "string",
-      "enum": [
-        "1",
-        "2"
-      ],
-      "x-apidog-enum": [
-        {
-          "value": "1",
-          "name": "open",
-          "description": "進行中"
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "string"
         },
-        {
-          "value": "2",
-          "name": "close",
-          "description": "終了"
+        "name": {
+            "type": "string"
+        },
+        "status": {
+            "type": "string",
+            "enum": [
+                "1",
+                "2"
+            ],
+            "x-apidog-enum": [
+                {
+                    "value": "1",
+                    "name": "open",
+                    "description": "進行中"
+                },
+                {
+                    "value": "2",
+                    "name": "close",
+                    "description": "終了"
+                }
+            ],
+            "default": "1"
         }
-      ]
-    }
-  },
-  "required": [
-    "id",
-    "name",
-    "status"
-  ],
-  "x-apidog-orders": [
-    "id",
-    "name",
-    "status"
-  ]
+    },
+    "required": [
+        "id",
+        "name",
+        "status"
+    ],
+    "x-apidog-orders": [
+        "id",
+        "name",
+        "status"
+    ]
 }
